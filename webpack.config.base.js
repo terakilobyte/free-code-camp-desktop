@@ -16,7 +16,7 @@ export default validate({
       loader: 'json-loader'
     }, {
       test: /\.scss$/,
-      loader: 'style?css?sass'
+      loader: 'style!css!sass'
     }]
   },
 
