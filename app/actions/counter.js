@@ -11,7 +11,7 @@ export function increment() {
 export function decrement() {
   return {
     type: DECREMENT_COUNTER
-  }
+  };
 }
 
 export function incrementIfOdd() {
@@ -23,13 +23,13 @@ export function incrementIfOdd() {
     }
 
     dispatch(increment());
-  }
+  };
 }
 
-export function incrementAsync(delay : Number = 1000) {
+export function incrementAsync(delay : number = 1000) {
   return (dispatch : Function) => {
     setTimeout(() => {
       dispatch(increment());
-    }, delay)
-  }
+    }, delay);
+  };
 }

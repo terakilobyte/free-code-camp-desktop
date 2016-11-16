@@ -37,6 +37,6 @@ Counter.propTypes = {
   incrementAsync: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired
-}
+};
 
-export default Counter
+export default Counter;

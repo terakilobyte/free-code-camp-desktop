@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router'; // eslint-disable-line
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
@@ -33,9 +33,10 @@ const Logged = (props) => (
  * to render different components depending on the application state.
  */
 
- const styles = {
-   backgroundColor: 'darkGreen'
- }
+const styles = {
+  backgroundColor: 'darkGreen'
+};
+
 export default class Home extends Component {
 
   constructor(props: Object) {
@@ -44,6 +45,10 @@ export default class Home extends Component {
       logged: true
     };
   }
+
+  state: {
+    logged: boolean
+  };
 
   render() {
     return (
