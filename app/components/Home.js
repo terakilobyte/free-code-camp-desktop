@@ -7,6 +7,7 @@ import MenuItem from 'material-ui/MenuItem';
 import FlatButton from 'material-ui/FlatButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import FontIcon from 'material-ui/FontIcon';
+import FileLoader from './FileLoader';
 
 const Login = (props) => (
   <FlatButton onClick={props.logged} label="Login" />
@@ -80,6 +81,7 @@ export default class Home extends Component {
             : <Login logged={this.logged.bind(this)} />
           }
         />
+        <FileLoader />
       </div>
     );
   }
